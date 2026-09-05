@@ -1,7 +1,7 @@
 # Active Walk Model
 
-This is an interactive warehouse engineering analytics application for evaluating
-walking-time standards associated with order-picking operations. Speicifically warehouses operating under manhattan active systems. 
+This is an interactive warehouse engineering analytics application for 
+evaluating walking-time standards associated with order-picking operations.
 
 This project demonstrates the modernization of a legacy analytical workflow
 into a Python-based processing pipeline with an interactive Streamlit user
