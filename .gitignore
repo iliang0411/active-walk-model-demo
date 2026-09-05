@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+.venv-*/
+venv/
+env/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Environment variables / credentials
+.env
+.env.*
+*.pem
+*.key
+
+# Local output
+output/
+outputs/
+logs/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Testing / cache
+.pytest_cache/
+.coverage
+htmlcov/
