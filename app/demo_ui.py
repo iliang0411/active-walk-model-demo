@@ -2021,11 +2021,11 @@ if not st.session_state.model_has_run:
                 </div>
 
                 <div class="impact-value">
-                    AWS target
+                    Deployed on AWS
                 </div>
 
                 <div class="impact-text">
-                    Planned deployment using Docker,
+                    Deployment using Docker,
                     ECR, ECS/Fargate and CloudWatch.
                 </div>
 
@@ -2668,7 +2668,7 @@ if not st.session_state.model_has_run:
                 </span>
 
                 <span class="tech-tag orange">
-                    Docker — planned
+                    Docker
                 </span>
 
                 <span class="tech-tag orange">
@@ -3309,21 +3309,21 @@ Impact Comparison
                 </div>
 
                 <div class="section-title">
-                    Target AWS Architecture
+                    AWS Deployment Architecture
                 </div>
 
                 <div class="section-description">
 
-                    This is the cloud deployment architecture
-                    we will implement for the public portfolio
-                    application.
+                    The public portfolio application is containerized
+                    and deployed on AWS using ECS/Fargate, an Application
+                    Load Balancer, CloudFront and CloudWatch monitoring.
 
                 </div>
                 """
             )
 
             st.code(
-                """
+    """
 GitHub Repository
        │
        ▼
@@ -3342,24 +3342,33 @@ Streamlit Application
        │                  Logs / Monitoring
        │
        ▼
+Application Load Balancer
+       │
+       ▼
+Amazon CloudFront
+       │
+       ▼
 Public HTTPS Application
-                """,
-                language=None,
-            )
+    """,
+    language=None,
+)
 
-            st.markdown(
-                """
-                **Deployment workflow**
+           st.markdown(
+            """
+            **Deployment workflow**
 
-                `VS Code`
-                → `GitHub`
-                → `Docker`
-                → `Amazon ECR`
-                → `Amazon ECS / Fargate`
-                → `CloudWatch`
-                → `Public Application`
-                """
-            )
+            `VS Code`
+            → `GitHub`
+            → `Docker`
+            → `Amazon ECR`
+            → `Amazon ECS / Fargate`
+            → `Application Load Balancer`
+            → `Amazon CloudFront`
+            → `Public HTTPS Application`
+
+            **Monitoring:** `Amazon CloudWatch`
+            """
+        )
 
 
     # =====================================================
@@ -3405,7 +3414,7 @@ render_html(
         &nbsp;·&nbsp;
         Streamlit
         &nbsp;·&nbsp;
-        AWS deployment planned
+        AWS deployment
 
     </div>
     """

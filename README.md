@@ -7,6 +7,10 @@ This project demonstrates the modernization of a legacy analytical workflow
 into a Python-based processing pipeline with an interactive Streamlit user
 interface.
 
+## Live Demo
+
+[Launch the Active Walk Model](https://d2c4g7u0iike6i.cloudfront.net)
+
 > **Portfolio Demo**
 >
 > This repository uses synthetic demonstration data only.
